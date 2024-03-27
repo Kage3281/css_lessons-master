@@ -16,11 +16,29 @@
         }
 
         .card {
-
             overflow: hidden;
             position: relative;
             top: 0;
             left: 0;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        .side-back {
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .side-font {
+            transform: rotateY(180deg);
+
         }
 
         img {
@@ -69,35 +87,7 @@
             transform: translateY(-70px);
         }
 
-        .side_font {
-            transition: all 1s ease-in 1s;
-            transform-style: preserve-3d;
-            transition: transform 1s;
-        }
-
-
-        .side_back {
-            background-color: aqua;
-            visibility: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-
-            transition: all 1s ease-in 1s;
-            transform-style: preserve-3d;
-            transition: transform 1s;
-
-        }
-
-        .container:hover .side-font {
-            transform: rotateY(180deg);
-        }
-
-        .container:hover .side_back {
-            visibility: visible;
+        .card:hover {
             transform: rotateY(180deg);
         }
     </style>
@@ -109,70 +99,70 @@
             <div class="side-font">
                 <img src="../06_grid排版/imgs/people2.jpg" alt="">
             </div>
-            <div class="side_back">Project 1</div>
+            <div class="side-back">Project 1</div>
         </div>
 
         <div class="card pic2">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/food1.jpg" alt="">
             </div>
-            <div class="side_back">Project 2</div>
+            <div class="side-back">Project 2</div>
         </div>
 
         <div class="card pic3">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/food2.jpg" alt="">
             </div>
-            <div class="side_back">Project 3</div>
+            <div class="side-back">Project 3</div>
         </div>
 
         <div class="card pic4">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/japan.jpg" alt="">
             </div>
-            <div class="side_back">Project 4</div>
+            <div class="side-back">Project 4</div>
         </div>
 
         <div class="card pic5">
             <div class="side-font5">
                 <img src="../06_grid排版/imgs/japan1.jpg" alt="">
             </div>
-            <div class="side_back">Project 5</div>
+            <div class="side-back">Project 5</div>
         </div>
 
         <div class="card pic6">
             <div class="side-font">
                 <img class="pos" src="../06_grid排版/imgs/japan2.jpg" alt="">
             </div>
-            <div class="side_back">Project 6</div>
+            <div class="side-back">Project 6</div>
         </div>
 
         <div class="card pic7">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/japan3.jpg" alt="">
             </div>
-            <div class="side_back">Project 7</div>
+            <div class="side-back">Project 7</div>
         </div>
 
         <div class="card pic8">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/pancake.jpg" alt="">
             </div>
-            <div class="side_back">Project 8</div>
+            <div class="side-back">Project 8</div>
         </div>
 
         <div class="card pic9">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/people1.jpg" alt="">
             </div>
-            <div class="side_back">Project 9</div>
+            <div class="side-back">Project 9</div>
         </div>
 
         <div class="card pic10">
             <div class="side-font">
                 <img src="../06_grid排版/imgs/photo1.jpg" alt="">
             </div>
-            <div class="side_back">Project 10</div>
+            <div class="side-back">Project 10</div>
         </div>
     </div>
 </body>
