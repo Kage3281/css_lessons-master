@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-solid {
+    color: #CDA274;
+}
+
+
+
+
+.banner {
+    width: 100%;
+    background: url(../img/phone/Photo.jpg) no-repeat;
+    height: 353px;
+    border-bottom-left-radius: 75px;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: 'DM Serif Display';
+    letter-spacing: 1px;
+}
+
+
+.hero p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-black {
+    font-size: 1.125rem;
+    color: white;
+    background-color: #292F36;
+    padding: 0.8rem 2rem;
+    border-radius: 18px;
+}
+
+@media screen and (min-width:481px) {
+    .banner {
+        background: url(../img/tablet/Photo.jpg) no-repeat;
+        height: 445px;
+        border-bottom-left-radius: 150px;
+    }
+
+    .hero {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:821px) {
+    .banner {
+        background: url(../img/Photo.jpg) no-repeat;
+        height: 880px;
+        border-bottom-left-radius: 291px;
+    }
+
+
+    .container {
+        width: 80%;
+
+
+    }
+
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    .hero p {
+        font-size: 2.0625rem;
+    }
+
+    .btn-black {
+        padding: 26px 48px;
+    }
+}

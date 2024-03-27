@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWD主導覽練習檔</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap");
+
+        /* font-family: 'Mukta', sans-serif; 
+            font-family: 'Dosis';
+        */
+        /* 電腦與平板上應用的樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(237, 237, 237);
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        header {
+            background-color: rgb(129, 187, 250);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            background-color: rgb(48, 47, 47);
+            color: aliceblue;
+            width: 70px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ol {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            width: 24.9%;
+            /* border-right: 1px solid white; */
+        }
+
+        a {
+            text-decoration: none;
+            background-color: rgb(65, 65, 252);
+
+            color: aliceblue;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        a:hover {
+            background-color: rgb(129, 187, 250);
+            color: rgb(65, 65, 252);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .container1 {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .block1 {
+            background-color: gray;
+            width: 45%;
+            height: 500px;
+        }
+
+        .block2 {
+            background-color: rgb(74, 254, 38);
+            width: 30%;
+            height: 300px;
+        }
+
+        .block3 {
+            background-color: tomato;
+            width: 30%;
+            height: 150px;
+            margin: 10px;
+
+        }
+
+        .art1 {
+            background-color: #8aa;
+        }
+
+        .art2 {
+            background-color: #fa0;
+            padding: 50px;
+        }
+
+        .art3 {
+            background: #ffa;
+            padding: 20px;
+        }
+
+
+        footer {
+            width: auto;
+            padding: 1% 0;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .contact {
+            background-image: linear-gradient(to left top, #2f62ad, #008fd5, #00b8c5, #00d882, #a8eb12);
+            padding: 80px 0;
+        }
+
+        .w-50 {
+
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .ContactForm {
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px #00b8c5;
+            background-color: white;
+            width: 100%;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            flex-grow: 1;
+            padding: 8px;
+            font-size: 18px;
+        }
+
+        input[type="text"]:focus {
+            outline: 2px solid #00b8c5;
+        }
+
+        textarea {
+            resize: none;
+            width: 97%;
+            height: 80px;
+            border-style: none;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            padding: 8px;
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        textarea:focus {
+            outline: 2px solid #00b8c5;
+        }
+
+        /* 手機 */
+        @media screen and (max-width: 500px) {
+            .menu {
+                width: 70px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: blueviolet;
+                color: aliceblue;
+            }
+
+            header {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                width: 100%;
+            }
+
+            ol {
+                flex-wrap: wrap;
+            }
+
+            ol li {
+                width: 100%;
+                border-bottom: 1px solid rgb(129, 187, 250);
+            }
+
+            .art3>.container>div:nth-child(odd) {
+                background-color: #fa0;
+
+            }
+
+            .art3>.container>div:nth-child(3) {
+                order: 4;
+
+            }
+
+            .art3>.container>div:nth-child(4) {
+                order: 3;
+
+            }
+
+            .art3>.container>div:nth-child(5) {
+                order: 5;
+
+            }
+
+            .art3>.container>div:nth-child(6) {
+                order: 6;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">TRENT</div>
+        <div class="menu">Menu</div>
+        <nav>
+            <ol>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <article class="art1">
+        <div class="container">
+            <div class="block1"></div>
+            <div class="block1"></div>
+        </div>
+    </article>
+
+    <article class="art2">
+        <div class="container">
+            <div class="block2"></div>
+            <div class="block2"></div>
+            <div class="block2"></div>
+        </div>
+    </article>
+
+    <article class="art3">
+        <div class="container">
+            <div class="block3">text</div>
+            <div class="block3">img</div>
+            <div class="block3">text</div>
+            <div class="block3">img</div>
+            <div class="block3">text</div>
+            <div class="block3">img</div>
+        </div>
+    </article>
+
+
+
+    <section class="contact">
+
+
+
+
+        <div class="container1">
+
+
+
+            <div class="w-50">
+
+            </div>
+
+
+
+            <div class="w-50">
+
+                <form action="" class="ContactForm">
+
+                    <div class="form-group">
+                        <label for="">姓名</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">電話</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-grou">
+                        <label for="">訊息</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input type="submit" value="確定送出">
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright © 2024</p>
+    </footer>
+</body>
+
+</html>

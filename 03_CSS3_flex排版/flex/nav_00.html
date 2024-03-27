@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RWD主導覽練習檔</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap");
+
+    /* font-family: 'Mukta', sans-serif; 
+            font-family: 'Dosis';
+        */
+    /* 電腦與平板上應用的樣式 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(237, 237, 237);
+      margin: 0px;
+      font-size: 14px;
+    }
+
+    header {
+      background-color: rgb(129, 187, 250);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      background-color: rgb(48, 47, 47);
+      color: aliceblue;
+      width: 70px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ol {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      width: 24.9%;
+      /* border-right: 1px solid white; */
+    }
+
+    a {
+      text-decoration: none;
+      background-color: rgb(65, 65, 252);
+
+      color: aliceblue;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    a:hover {
+      background-color: rgb(129, 187, 250);
+      color: rgb(65, 65, 252);
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      height: auto;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+
+
+    /* .block1 {
+      background-color: gray;
+      width: 45%;
+      height: 500px;
+    }
+
+    .block2 {
+      background-color: rgb(74, 254, 38);
+      width: 30%;
+      height: 300px;
+    }
+
+    .block3 {
+      background-color: tomato;
+      width: 30%;
+      height: 150px;
+      margin: 10px;
+    }
+
+    .art1 {
+      background-color: #8aa;
+    }
+
+    .art2 {
+      background-color: #fa0;
+      padding: 50px;
+    }
+
+    .art3 {
+      background: #ffa;
+      padding: 20px;
+    } */
+
+    footer {
+      width: auto;
+      padding: 1% 0;
+      background-color: black;
+      color: aliceblue;
+      text-align: center;
+    }
+
+    /* 手機 */
+    @media screen and (max-width: 500px) {
+      .menu {
+        width: 70px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+
+      header {
+        flex-wrap: wrap;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      ol {
+        flex-wrap: wrap;
+      }
+
+      ol li {
+        width: 100%;
+        border-bottom: 1px solid rgb(129, 187, 250);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">TRENT</div>
+    <div class="menu">Menu</div>
+    <nav>
+      <ol>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <section class="">
+    <div class="container">
+      <div class="block1"></div>
+      <div class="block1"></div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container">
+      <div class="block2"></div>
+      <div class="block2"></div>
+      <div class="block2"></div>
+    </div>
+  </section>
+
+  <section class="photo">
+    <div class="container">
+      <ul>
+        <li>img</li>
+        <li>text</li>
+        <li>img</li>
+        <li>text</li>
+        <li>img</li>
+        <li>text</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright © 2024</p>
+  </footer>
+</body>
+
+</html>

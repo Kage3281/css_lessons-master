@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+  <title>The Bakery Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      width: auto;
+      height: 5%;
+      border-bottom: 0.0625rem solid black;
+    }
+
+    .logo {
+      margin-left: 1.25rem;
+      width: 5%;
+    }
+
+    nav {
+      width: 30%;
+      float: right;
+      overflow: auto;
+      font-family: "Noto Sans TC";
+    }
+
+    nav li {
+      /* border: 1px solid black; */
+      width: 30%;
+      height: 4em;
+      float: right;
+      list-style: none;
+    }
+
+    nav li a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      line-height: 3.5rem;
+      font-size: 1.4rem;
+      color: black;
+    }
+
+    a:hover {
+      color: tomato;
+    }
+
+    article {
+      /* border: 1px solid black; */
+      width: 60%;
+      margin: auto;
+      font-size: 1.125rem;
+      line-height: 3.125rem;
+      overflow: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 2.5rem;
+    }
+
+    .news div {
+      width: 100%;
+      float: left;
+      border-bottom: 0.0625rem dashed black;
+      font-family: "Noto Sans TC";
+    }
+
+    .date,
+    .title {
+      display: inline-block;
+      margin-right: 2.1875rem;
+    }
+
+    /* .product {
+      padding-bottom: 4%;
+    }
+
+    figure {
+      width: 16.875rem;
+      height: 16.25rem;
+      border: 10px solid blue;
+        background-color: blue;
+      float: right;
+      margin-right: 0.7875rem;
+    }
+
+    .cake {
+      border: 0.625rem solid rgb(19, 98, 233);
+      background-color: rgb(19, 98, 233);
+    }
+
+    .bread {
+      border: 0.625rem solid tomato;
+      background-color: tomato;
+    }
+
+    .dessert {
+      border: 0.625rem solid lightseagreen;
+      background-color: lightseagreen;
+    }
+
+    figure img {
+      width: 16.875rem;
+      height: 13.125rem;
+    }
+
+    figcaption {
+      color: aliceblue;
+      text-align: center;
+      line-height: 0.0625rem;
+      font-size: 1.5rem;
+    } */
+
+    .prod {
+      width: 30%;
+      padding: 10px;
+      background-color: blue;
+    }
+
+    footer {
+      width: auto;
+      padding: 1% 0;
+      background-color: black;
+      color: aliceblue;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./img/logo.jpeg" alt="" />
+    <nav>
+      <ul>
+        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#">產品介紹</a></li>
+        <li><a href="#">最新消息</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="news">
+    <h1>最新消息</h1>
+
+    <div>
+      <div class="date">2024-06-23</div>
+      <div class="title">新品上市，優惠7折</div>
+    </div>
+    <div>
+      <div class="date">2024-05-30</div>
+      <div class="title">預訂生日蛋糕送好禮</div>
+    </div>
+    <div>
+      <div class="date">2024-05-01</div>
+      <div class="title">母親節蛋糕特惠中</div>
+    </div>
+  </article>
+
+  <article class="product">
+
+    <div class="container">
+      <h1>產品分類</h1>
+    </div>
+
+
+    <div class="prod">
+      <figure class="dessert">
+        <img src="./img/dessert.jpg" alt="" />
+        <figcaption>甜點</figcaption>
+      </figure>
+
+      <figure class="bread">
+        <img src="./img/bread.jpg" alt="" />
+        <figcaption>麵包</figcaption>
+      </figure>
+
+      <figure class="cake">
+        <img src="./img/cake.webp" alt="" />
+        <figcaption>蛋糕</figcaption>
+      </figure>
+    </div>
+
+  </article>
+
+  <footer>
+    <p>Copyright © 2024</p>
+  </footer>
+</body>
+
+</html>

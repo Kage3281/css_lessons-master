@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Dice-cube</title>
+    <style>
+        .cube {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            transition: transform 4s;
+        }
+
+        .cube-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            transition: all 0.3;
+
+        }
+
+        .font {
+            transform: translateZ(100px);
+        }
+
+        .back {
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+
+        .left {
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+
+        .right {
+            transform: translateX(100px) rotateY(90deg);
+        }
+
+        .bottom {
+            transform: translateY(100px) rotateX(-90deg);
+        }
+
+
+        .top {
+            transform: translateY(-100px) rotateX(90deg);
+        }
+
+        .cube:hover {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+
+        .dice {
+            width: 210px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">
+        <div class="cube-face font">
+            <img class="dice" src="./dice/dice-1.png" alt="">
+        </div>
+        <div class="cube-face back">
+            <img class="dice" src="./dice/dice-6.png" alt="">
+        </div>
+        <div class="cube-face left">
+            <img class="dice" src="./dice/dice-3.png" alt="">
+        </div>
+        <div class="cube-face right">
+            <img class="dice" src="./dice/dice-4.png" alt="">
+        </div>
+        <div class="cube-face bottom">
+            <img class="dice" src="./dice/dice-5.png" alt="">
+        </div>
+        <div class="cube-face top">
+            <img class="dice" src="./dice/dice-2.png" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

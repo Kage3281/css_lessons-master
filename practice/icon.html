@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            width: 3em;
+            height: 3em;
+            margin: 5em auto;
+            border: 1em solid aquamarine;
+            background-color: black;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu::after {
+            content: "";
+            position: absolute;
+            width: 2em;
+            left: calc((3em - 2em) /2);
+            top: 1em;
+            height: 0.2em;
+            border-top: 0.6em double white;
+            border-bottom: 0.2em solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+</body>
+
+</html>
